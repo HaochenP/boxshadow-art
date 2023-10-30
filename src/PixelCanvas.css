@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pixel-grid {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 1px;
+    width: 320px; 
+    height: 320px;
+}
+
+.pixel {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0;  
+}
+
+.colour-panel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px; 
+    margin-right: 20px; 
+}
+
+.colour-switch {
+    width: calc(50% - 5px); 
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.css-output {
+    word-wrap: break-word;
+    white-space: pre-wrap; 
+}
